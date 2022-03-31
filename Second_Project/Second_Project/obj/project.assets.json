@@ -7916,11 +7916,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\ASP.NET\\Second_Project\\Second_Project\\Second_Project.csproj",
+      "projectUniqueName": "F:\\ASP.NET\\MyLib\\Second_Project\\Second_Project\\Second_Project.csproj",
       "projectName": "Second_Project",
-      "projectPath": "F:\\ASP.NET\\Second_Project\\Second_Project\\Second_Project.csproj",
+      "projectPath": "F:\\ASP.NET\\MyLib\\Second_Project\\Second_Project\\Second_Project.csproj",
       "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-      "outputPath": "F:\\ASP.NET\\Second_Project\\Second_Project\\obj\\",
+      "outputPath": "F:\\ASP.NET\\MyLib\\Second_Project\\Second_Project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
