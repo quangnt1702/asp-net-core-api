@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Dt2rKZcdMohvWCVYEWMIGI27aLIxvXQR3wIRRvJ5Bl49fDuG/2TDCgiEz53EzN7jPT72Ui8FiN/eZp7cuk/uXQ==",
+  "dgSpecHash": "c4i2qBbL7SKxaR9XHJo1dMesXbQS1P64GJg/zNEFlLnUfgdWNy0eJ2EX6W0kzGzR6IHpm4vRMl/YdU/rDoHCbQ==",
   "success": true,
-  "projectFilePath": "F:\\ASP.NET\\Second_Project\\Second_Project\\Second_Project.csproj",
+  "projectFilePath": "F:\\ASP.NET\\MyLib\\Second_Project\\Second_Project\\Second_Project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ACER\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

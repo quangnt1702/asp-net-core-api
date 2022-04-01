@@ -30,7 +30,7 @@ namespace Second_Project.Controllers
         [HttpGet("getToken")]
         public ActionResult GetToken()
         {
-            var accessToken = HttpContext.Items["accessToken"];
+            var accessToken = HttpContext.Items["UserName"];
             if (accessToken != null) return Ok(accessToken.ToString());
             return NotFound();
         }
