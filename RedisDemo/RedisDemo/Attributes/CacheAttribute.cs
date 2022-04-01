@@ -40,7 +40,7 @@ namespace RedisDemo.Attributes
                     Content = cacheResponse,
                     ContentType = "application/json",
                     StatusCode = 200
-                };
+                };  
                 context.Result = containResult;
                 return;
             }

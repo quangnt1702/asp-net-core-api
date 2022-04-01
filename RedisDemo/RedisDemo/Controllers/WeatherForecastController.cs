@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using RedisDemo.Attributes;
+using RedisDemo.Services;
 
 namespace RedisDemo.Controllers
 {
@@ -17,23 +20,32 @@ namespace RedisDemo.Controllers
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
-
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        private readonly IResponseCacheService _responseCacheService;
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IResponseCacheService responseCacheService)
         {
             _logger = logger;
+            _responseCacheService = responseCacheService;
         }
 
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        [Cache((1000))]
+        public  ActionResult<List<WeatherForecast>> GetAsync()
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-                {
-                    Date = DateTime.Now.AddDays(index),
-                    TemperatureC = rng.Next(-20, 55),
-                    Summary = Summaries[rng.Next(Summaries.Length)]
-                })
-                .ToArray();
+            var result = new List<WeatherForecast>()
+            {
+                new WeatherForecast() {Name = "Nguyen Van B"},
+                new WeatherForecast() {Name = "Nguyen Van C"},
+                new WeatherForecast() {Name = "Nguyen Van D"},
+                new WeatherForecast() {Name = "Nguyen Van A"}
+            };
+            return Ok(result);
+        }
+
+        [HttpGet("Remove")]
+        public async Task<IActionResult> Remove()
+        {
+            await _responseCacheService.RemoveResponseCacheAsync("/WeatherForecast");
+            return Ok( );
         }
     }
 }
