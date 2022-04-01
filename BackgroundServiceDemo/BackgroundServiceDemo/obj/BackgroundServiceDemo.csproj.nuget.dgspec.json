@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\ASP.NET\\MyLib\\BackgroundSercviceDemo\\BackgroundSercviceDemo\\BackgroundSercviceDemo.csproj": {}
+    "F:\\ASP.NET\\MyLib\\BackgroundServiceDemo\\BackgroundServiceDemo\\BackgroundServiceDemo.csproj": {}
   },
   "projects": {
-    "F:\\ASP.NET\\MyLib\\BackgroundSercviceDemo\\BackgroundSercviceDemo\\BackgroundSercviceDemo.csproj": {
+    "F:\\ASP.NET\\MyLib\\BackgroundServiceDemo\\BackgroundServiceDemo\\BackgroundServiceDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\ASP.NET\\MyLib\\BackgroundSercviceDemo\\BackgroundSercviceDemo\\BackgroundSercviceDemo.csproj",
-        "projectName": "BackgroundSercviceDemo",
-        "projectPath": "F:\\ASP.NET\\MyLib\\BackgroundSercviceDemo\\BackgroundSercviceDemo\\BackgroundSercviceDemo.csproj",
+        "projectUniqueName": "F:\\ASP.NET\\MyLib\\BackgroundServiceDemo\\BackgroundServiceDemo\\BackgroundServiceDemo.csproj",
+        "projectName": "BackgroundServiceDemo",
+        "projectPath": "F:\\ASP.NET\\MyLib\\BackgroundServiceDemo\\BackgroundServiceDemo\\BackgroundServiceDemo.csproj",
         "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "F:\\ASP.NET\\MyLib\\BackgroundSercviceDemo\\BackgroundSercviceDemo\\obj\\",
+        "outputPath": "F:\\ASP.NET\\MyLib\\BackgroundServiceDemo\\BackgroundServiceDemo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",

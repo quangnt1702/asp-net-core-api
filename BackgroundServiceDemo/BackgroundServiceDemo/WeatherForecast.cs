@@ -1,6 +1,6 @@
 using System;
 
-namespace BackgroundSercviceDemo
+namespace BackgroundServiceDemo
 {
     public class WeatherForecast
     {
