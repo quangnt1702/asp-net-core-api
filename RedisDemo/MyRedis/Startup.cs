@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Reso.Core.Extension;
 
 namespace MyRedis
 {
@@ -28,6 +29,8 @@ namespace MyRedis
         {
             services.AddControllers();
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "MyRedis", Version = "v1"}); });
+            
+            services.ConfigMemoryCacheAndRedisCache(Configuration["Endpoint:RedisEndpoint"]);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

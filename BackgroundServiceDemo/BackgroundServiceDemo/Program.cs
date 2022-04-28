@@ -20,6 +20,7 @@ namespace BackgroundServiceDemo
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder => { webBuilder.UseStartup<Startup>(); }).ConfigureServices((hostContext, services) => { services.AddHostedService<Worker>(); });
+                .ConfigureWebHostDefaults(webBuilder => { webBuilder.UseStartup<Startup>(); })
+                .ConfigureServices((hostContext, services) => { services.AddHostedService<Worker>(); });
     }
 }

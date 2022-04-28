@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MdMssZzr6ZpwZS7jMaUscHLFF2HVQ6WEdhFFsXDNecjLLmQBPi0ymzcdlanyaV9pqw2FmL7ZQeC3wZNd/3+Upg==",
+  "dgSpecHash": "4cvtWR97DVaR88ymwlJGD8PdO+96NEwfCMa9wnqIwEUxxAYTMQciV2/INdca0cZFTae/X/oIdLXFvX29iogfZw==",
   "success": true,
   "projectFilePath": "F:\\ASP.NET\\MyLib\\BackgroundServiceDemo\\WorkerService\\WorkerService.csproj",
   "expectedPackageFiles": [
