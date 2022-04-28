@@ -5,4 +5,8 @@
         <TargetFramework>net5.0</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Google.Apis.Drive.v3" Version="1.56.0.2601" />
+    </ItemGroup>
+
 </Project>

@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "93gvz2Nd9VHOSKRY+p19u+mPrJ04LP/4tcqgLcW1iKm8H74BMp0ly06Hq9JKifgVBt6AS3dVW5RU9V6Wt8B3Jw==",
+  "dgSpecHash": "KgVhXp1BcSPIqe1urqckZc/5bUf3K8gkLYkcLqp+OCZ+Wv1uiUBN4V8WTC+fxjZpNL/rjUTJ7s8vgjVs6Y4GKA==",
   "success": true,
   "projectFilePath": "F:\\ASP.NET\\MyLib\\GoogleDriveUploadDemo\\GoogleDriveUploadDemo\\GoogleDriveUploadDemo.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ACER\\.nuget\\packages\\google.apis\\1.56.0\\google.apis.1.56.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\google.apis.auth\\1.56.0\\google.apis.auth.1.56.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\google.apis.core\\1.56.0\\google.apis.core.1.56.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\google.apis.drive.v3\\1.56.0.2601\\google.apis.drive.v3.1.56.0.2601.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -24,4 +24,10 @@
         <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Reference Include="ResoLogTool, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\..\ResoLogTool\ResoLogTool\bin\Debug\net5.0\ResoLogTool.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
 </Project>
