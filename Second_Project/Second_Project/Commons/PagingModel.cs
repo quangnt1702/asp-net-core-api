@@ -1,4 +1,4 @@
-﻿namespace Second_Project.ViewModels
+﻿namespace Second_Project.Commons
 {
     public class PagingModel
     {

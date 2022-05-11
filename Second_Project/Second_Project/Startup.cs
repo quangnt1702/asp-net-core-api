@@ -4,7 +4,6 @@ using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -13,7 +12,6 @@ using Microsoft.OpenApi.Models;
 using Second_Project.Helpers;
 using Second_Project.Middlewares;
 using Second_Project.Models;
-using Second_Project.Services;
 
 namespace Second_Project
 {
