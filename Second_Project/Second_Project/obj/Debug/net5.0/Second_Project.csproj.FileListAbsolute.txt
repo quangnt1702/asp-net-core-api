@@ -334,3 +334,5 @@ F:\ASP.NET\MyLib\Second_Project\Second_Project\obj\Debug\net5.0\Second_Project.d
 F:\ASP.NET\MyLib\Second_Project\Second_Project\obj\Debug\net5.0\ref\Second_Project.dll
 F:\ASP.NET\MyLib\Second_Project\Second_Project\obj\Debug\net5.0\Second_Project.pdb
 F:\ASP.NET\MyLib\Second_Project\Second_Project\obj\Debug\net5.0\Second_Project.genruntimeconfig.cache
+F:\ASP.NET\MyLib\Second_Project\Second_Project\bin\Debug\net5.0\ResoLogTool.dll
+F:\ASP.NET\MyLib\Second_Project\Second_Project\bin\Debug\net5.0\ResoLogTool.pdb

@@ -1,11 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
-using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Configuration;
+using StackExchange.Redis;
 
 namespace MyRedis.Controllers
 {
@@ -14,10 +11,14 @@ namespace MyRedis.Controllers
     public class RedisController : ControllerBase
     {
         private readonly IDistributedCache _distributedCache;
+        private readonly IConnectionMultiplexer _connectionMultiplexer;
+        private readonly IConfiguration _configuration;
 
-        public RedisController(IDistributedCache distributedCache)
+        public RedisController(IDistributedCache distributedCache, IConnectionMultiplexer connectionMultiplexer, IConfiguration configuration)
         {
             _distributedCache = distributedCache;
+            _connectionMultiplexer = connectionMultiplexer;
+            _configuration = configuration;
         }
 
 
@@ -29,10 +30,29 @@ namespace MyRedis.Controllers
         }
 
         [HttpDelete("{key}")]
-        public async Task<ActionResult<object>> StoreIntoRedis(string key)
+        public async Task<ActionResult<object>> DeleteInRedisByKey(string key)
         {
             await CacheManager.CacheManager.RemoveObjectAsync(null, _distributedCache, key);
             return Ok();
+        }
+        
+        [HttpDelete]
+        public async Task<ActionResult<object>> DeleteAll()
+        {
+            var keys =  CacheManager.CacheManager.GetAllkeys(_connectionMultiplexer, _configuration);
+            foreach (var key in keys)
+            {
+                await CacheManager.CacheManager.RemoveObjectAsync(null, _distributedCache, key);
+            }
+            return Ok();
+        }
+        
+        [HttpGet("all")]
+        public  ActionResult<object> GetAllKey()
+        {
+            var keys =  CacheManager.CacheManager.GetAllkeys(_connectionMultiplexer, _configuration);
+            
+            return Ok(keys);
         }
     }
 

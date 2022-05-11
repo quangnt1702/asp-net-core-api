@@ -12,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Reso.Core.Extension;
+using StackExchange.Redis;
 
 namespace MyRedis
 {
@@ -29,7 +30,8 @@ namespace MyRedis
         {
             services.AddControllers();
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "MyRedis", Version = "v1"}); });
-            
+            services.AddSingleton<IConnectionMultiplexer>(_ =>
+                ConnectionMultiplexer.Connect(Configuration["Endpoint:RedisEndpoint"]));
             services.ConfigMemoryCacheAndRedisCache(Configuration["Endpoint:RedisEndpoint"]);
         }
 

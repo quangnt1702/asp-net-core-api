@@ -1,6 +1,10 @@
-﻿using Microsoft.Extensions.Caching.Distributed;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Configuration;
 using Reso.Core.Extension;
+using StackExchange.Redis;
 
 namespace MyRedis.CacheManager
 {
@@ -73,7 +77,16 @@ namespace MyRedis.CacheManager
                 }
 
             }
+        }
+        
+        public static List<string> GetAllkeys(IConnectionMultiplexer _connectionMultiplexe,
+            IConfiguration _configuration)
+        {
+            List<string> listKeys = new List<string>();
 
+            var keys = _connectionMultiplexe.GetServer(_configuration["Endpoint:RedisEndpoint"]).Keys();
+            listKeys.AddRange(keys.Select(key => (string) key).ToList());
+            return listKeys;
         }
     }
 }
